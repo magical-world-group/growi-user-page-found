@@ -4,7 +4,7 @@
     "description": "ユーザーの書いたページ数を可視化するプラグイン",
     "author": "Your Name",
     "version": "1.0.0",
-    "schemaVersion": 2
+    "schemaVersion": "4"
   },
   "name": "growi-user-page-found-main",
   "version": "1.0.0",
