@@ -1,0 +1,13 @@
+{
+  "name": "growi-user-page-found-main",
+  "version": "1.0.0",
+  "description": "ユーザーがどれくらい書いたかを可視化するプラグイン",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "growi-plugin-utils": "^1.0.0"
+  },
+  "devDependencies": {}
+}
