@@ -9,5 +9,10 @@
   "dependencies": {
     "growi-plugin-utils": "^1.0.0"
   },
-  "devDependencies": {}
+  "growiPlugin": {
+    "name": "user-page-found-main",
+    "description": "ユーザーの書いたページ数を可視化するプラグイン",
+    "author": "Your Name",
+    "version": "1.0.0"
+  }
 }
