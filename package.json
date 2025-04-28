@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "growiPlugin": {
-    "schemaVersion": 1,
+  "schemaVersion": "1"
     "displayName": "User Page Found Main",
     "description": "ユーザーの書いたページ数を可視化するプラグイン",
     "entries": [
