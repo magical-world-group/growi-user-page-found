@@ -14,8 +14,8 @@
     "description": "ユーザーの書いたページ数を可視化するプラグイン",
     "author": "Your Name",
     "version": "1.0.0",
-    "schemaVersion": 1,
-    "pluginType": "app",  // これも必要かもしれない
-    "url": "https://example.com/plugin-doc" // 必要に応じて
+    "schemaVersion": 2,
+    "pluginType": "app",
+    "url": "https://example.com/plugin-doc"
   }
 }
