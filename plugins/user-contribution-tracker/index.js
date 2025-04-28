@@ -37,3 +37,9 @@ module.exports = (crowi) => {
 
   crowi.router.use('/user-contributions', router);
 };
+// plugins/user-contribution-tracker/index.js （APIの後ろあたりに追加）
+
+crowi.registerPlugin('user-contribution-tracker', {
+  'page:user-contributions': UserContributionPage, // ここでルーティング
+});
+
