@@ -1,4 +1,11 @@
 {
+  "growiPlugin": {
+    "name": "user-page-found-main",
+    "description": "ユーザーの書いたページ数を可視化するプラグイン",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "schemaVersion": "1"
+  },
   "name": "growi-user-page-found-main",
   "version": "1.0.0",
   "description": "ユーザーがどれくらい書いたかを可視化するプラグイン",
@@ -6,15 +13,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "growiPlugin": {
-  "schemaVersion": "1"
-    "displayName": "User Page Found Main",
-    "description": "ユーザーの書いたページ数を可視化するプラグイン",
-    "entries": [
-      {
-        "entry": "./index.js",
-        "pluginId": "user-page-found-main"
-      }
-    ]
+  "dependencies": {
+    "growi-plugin-utils": "^1.0.0"
   }
 }
