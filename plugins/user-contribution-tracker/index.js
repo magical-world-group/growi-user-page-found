@@ -1,6 +1,4 @@
-// plugins/user-contribution-tracker/index.js
-
-module.exports = (crowi) => {
+module.exports = (crowi, app) => {
   const express = require('express');
   const router = express.Router();
 
@@ -17,7 +15,7 @@ module.exports = (crowi) => {
       if (!page.revision || !page.creator) return;
 
       const rawText = page.revision.body || '';
-      const cleanText = rawText.replace(/[\s\W]/g, ''); // 空白・記号削除
+      const cleanText = rawText.replace(/[\s\W]/g, '');
       const charCount = cleanText.length;
 
       const userId = page.creator._id.toString();
@@ -35,11 +33,5 @@ module.exports = (crowi) => {
     res.json({ contributors: result });
   });
 
-  crowi.router.use('/user-contributions', router);
+  app.use('/user-contributions', router); // ← こっちが正解！
 };
-// plugins/user-contribution-tracker/index.js （APIの後ろあたりに追加）
-
-crowi.registerPlugin('user-contribution-tracker', {
-  'page:user-contributions': UserContributionPage, // ここでルーティング
-});
-
